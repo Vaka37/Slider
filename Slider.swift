@@ -111,7 +111,7 @@ struct CustomSlider<Value, Track, Fill, Thumb>: View
 }
 
 
-struct SliderView: View {
+public struct SliderView: View {
     private let thumbRadius: CGFloat = 30
     @State private var value = Date().timeIntervalSince1970
     @State var onEditingChanged = false
