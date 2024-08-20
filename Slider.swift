@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-struct CustomSlider<Value, Track, Fill, Thumb>: View
+public struct CustomSlider<Value, Track, Fill, Thumb>: View
     where Value: BinaryFloatingPoint, Value.Stride: BinaryFloatingPoint, Track: View, Fill: View, Thumb: View
 {
     @Binding var value: Value
@@ -28,7 +28,7 @@ struct CustomSlider<Value, Track, Fill, Thumb>: View
     @State private var lastOffset: CGFloat = 0
     @State private var trackSize: CGSize = .zero
 
-    init(
+    public  init(
         value: Binding<Value>,
         in bounds: ClosedRange<Value> = 0 ... 1,
         step: Value = 1,
@@ -60,7 +60,7 @@ struct CustomSlider<Value, Track, Fill, Thumb>: View
         trackSize.width * CGFloat(percentage)
     }
 
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .center) {
             HStack {
                 minimumValueLabel
