@@ -117,7 +117,7 @@ public struct SliderView: View {
     @State var onEditingChanged = false
     let endindAction: VoidHandler
     @State private var rangeValue: ClosedRange<Double>
-    var body: some View {
+    public var body: some View {
         GeometryReader { gr in
             VStack(alignment: .center) {
                 Spacer()
@@ -186,7 +186,7 @@ public struct SliderView: View {
         }
     }
 
-    init(endindAction: @escaping VoidHandler, rangeValue: ClosedRange<Double>) {
+    public init(endindAction: @escaping VoidHandler, rangeValue: ClosedRange<Double>) {
         self.endindAction = endindAction
         self.rangeValue = rangeValue
     }
