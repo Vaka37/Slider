@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "Slider",
+    name: "MyLibrary",
     platforms: [
         .iOS(.v13),
         .tvOS(.v15)
     ], products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Slider",
+            name: "MyLibrary",
             targets: ["MyLibrary"]),
     ],
     targets: [
