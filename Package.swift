@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyLibrary",
+    name: "Slider",
     platforms: [
         .iOS(.v13),
         .tvOS(.v15)
     ], products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "MyLibrary",
-            targets: ["MyLibrary"]),
+            name: "Slider",
+            targets: ["Slider"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "MyLibrary"),
+            name: "Slider"),
         .testTarget(
             name: "MyLibraryTests",
-            dependencies: ["MyLibrary"]),
+            dependencies: ["Slider"]),
     ]
 )
