@@ -5,10 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Slider",
-    platforms: [
-        .iOS(.v13),
-        .tvOS(.v15)
-    ], products: [
+     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Slider",
